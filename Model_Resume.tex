@@ -1,0 +1,351 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{charter}
+\usepackage{marvosym}
+% \usepackage{wasysym}
+\usepackage{changepage}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{comment} 
+\usepackage{graphicx}
+\usepackage[usenames]{color}
+\usepackage{multirow}
+\usepackage{multirow}
+\usepackage{color,hyperref}
+\renewcommand{\labelitemi}{\small$\blacktriangleright$}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.1}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+\leftmargin=0.2in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=0.5pt
+\textheight=9in
+%\usepackage{resume}
+
+\raggedright
+
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{2pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\usepackage[
+top    = 0.5 cm,
+bottom = 0.5 cm,
+left   = 2.0 cm,
+right  = 2.0 cm]{geometry}
+
+\newenvironment{noindlist}
+ {\begin{list}{\labelitemi}{\leftmargin=0em \itemindent=0em}}
+ {\end{list}}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{0in}{0in}
+		\vspace*{-18pt}
+		\hrulefill \\
+		\vspace*{-8pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+	\vspace{-4pt}
+		\Large\bfseries\scshape{#1}\hrulefill
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.0in}{-0.0in}
+% \newline\\
+		\begin{center}
+% 		\vspace{5pt}
+			{\Huge \scshape\bfseries{#1}}\\ \smallskip
+			{#2}\vspace{-2pt}\\ \smallskip 
+			{#3}
+% 			\smallskip
+			{#4}
+% 			\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.4in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+% \topmargin=0pt
+\setlength{\topmargin}{-0.8in}
+% \setlength{\leftmargin}{-0.45in}
+% \vspace{20pt}
+% \quad\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Mohd Talib Siddiqui}{$3^{rd}$ Year Undergraduate, Department of Computer Science and Engineering}
+{Indian Institute of Technology Kanpur\\}{\Mobilefone +91-9839602888 $\;$\Letter$\;$mtalib@iitk.ac.in, talibmohd888@gmail.com}
+
+\smallskip
+
+
+\vspace*{-4pt}
+%\header{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\vspace*{-4pt}
+\header{Education}
+
+% \begin{body}
+% 	\vspace{17pt}
+% 	\textbf{Bachelor of Technology, Computer Science and Engineering --- CPI : 10.0/10.0}
+% 	{} \hfill \emph{2018 - 22(Expected)}{} \\
+% 	\emph{Indian Institute of Technology, Kanpur}{} \\
+% \vspace*{3pt}
+% 	\textbf{Intermediate Education (Class XII), AISSCE, CBSE --- 96.8\%} \hfill \emph{2018} \\
+% \emph{Dr. Virendra Swarup Education Centre Shyam Nagar, Kanpur}\\
+%   \vspace{3pt}
+% \textbf{High School Education (Class X), CBSE --- CGPA 10/10} \hfill \emph{2016} \\
+% \emph{Dr. Virendra Swarup Education Centre Shyam Nagar, Kanpur}\\
+% \vspace{-5pt}
+% \end{body}
+% \smallskip
+
+\begin{body}
+\vspace{8pt}
+% \begin{center}
+\renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+        \textbf{Year} & \textbf{Degree} & \textbf{Institute} & \textbf{CPI/\%}\\
+    \hline
+        2018 - Present & B.Tech in Computer Science and Engineering & Indian Institute of Technology Kanpur & 10.0 \\
+    \hline
+        2018 & Class 12\textsuperscript{th} - CBSE & Dr. Virendra Swarup Education Centre Shyam Nagar & 96.8\%\\
+    \hline
+        2016 & Class 10\textsuperscript{th} - CBSE & Dr. Virendra Swarup Education Centre Shyam Nagar & 10.0\\
+    \hline
+    \end{tabular}
+% \end{center}
+\end{body}
+% \smallskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace* {-1pt}
+\header{Scholastic Achievements}
+\begin{body}
+	\vspace{18pt}
+%   \begin{multicols}{2}
+   
+	\begin{itemize} \itemsep -1pt  % reduce space between items
+        % \leftmargin=5pt
+        \itemindent=-1em
+        \item Awarded \textbf{Academic Excellence Award} for two consecutive years \textbf{2019} and \textbf{2020} for exceptional academic performance
+        % \item Awarded \textbf{Academic Excellence Award 2019} by SSPC, IIT Kanpur for exceptional academic performance in 2018-19 (I)
+		\item Secured \textbf{All India Rank 633} in Joint Entrance Examination (JEE) - Advanced - 2018 among \textbf{0.2 million candidates}
+		\item Secured \textbf{All India Rank 1264} in Joint Entrance Examination (JEE) - Main - 2018 among \textbf{1.2 million candidates}
+		\item Secured \textbf{All India Rank - 834} in \textbf{KVPY} (Kishore Vaigyanik Protsahan Yojna) and awarded fellowship in SX stream in year 2017
+		\item Cleared \textbf{NSEA} (National Science Examination in Astronomy), 2017 conducted by IAPT (Indian Association of Physics Teachers)
+		\item Awarded \textbf{NTSE} (National Talent Search Examination) scholarship in year 2016 by National Council of Education and Training
+	\end{itemize}
+	\vspace{2pt}
+% 	\end{multicols}
+\end{body}
+
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+\vspace*{-8pt}
+\header{Projects}
+
+\begin{body}
+	\vspace{18pt}\leftmargin=-0.7in
+	\textbf {Analysis Of Boolean Functions (Undergraduate Project - I)} 
+\hfill \emph{January'20 - June'20}\\
+\emph{Project Supervisor: Dr. Rajat Mittal, Department of Computer Science \& Engineering, Indian Institute of Technology Kanpur}\\
+\vspace{-5pt}
+	\begin{itemize} \itemsep -1pt
+% 	\itemindent=-10pt
+% 	\leftmargin=-0.7in
+		\item Conceptualized \textbf{Fourier Analysis of Boolean Functions} and Property Testing (\textbf{Linearity} Testing and \textbf{Sparsity} Testing)
+		\item Analyzed a \href{https://arxiv.org/pdf/1810.00481.pdf}{\textbf{paper}} on k-Sparse boolean functions which improved \textbf{Chang's Lemma} approximately by a quadratic factor \item Conceptualized \textbf{an upper bound} on expected number of queries to learn the \textbf{Fourier span} of k-sparse functions
+		\item Prospected various possible directions to further derive a tighter upper bound on \textbf{Fourier dimension} in sparse functions
+	\end{itemize}
+	\vspace{-4pt}
+\textbf {CampusBox Web App}  \hfill \emph{May'19 - July'19}\\
+\emph{CSE@IITK Summer of Code}
+\vspace{-3pt}
+	\begin{itemize}
+	\itemsep -1pt 
+% 	\labelitemi
+% 	\leftmargin=-10pt
+% 	\itemindent=-10pt
+	\item Developed a web app to facilitate taxi-sharing among students and a basic Buy \& Sell feature allowing price negotiation
+    \item Collaborated in a team of four members to deliberate on the idea and implementational details of the web app
+    \item Employed \textbf{Google Firebase} for authentication, realtime database and a serverless back-end with \textbf{VueJS} on the font-end
+	\end{itemize}
+	\vspace{-4pt}
+    \textbf {Competitive Programming (Advanced)} \hfill \emph{June'20 - Aug'20}\\
+\emph{Programming Club, IIT Kanpur}\\
+\vspace{-5pt}
+	\begin{itemize} \itemsep -1pt
+		\item  Implemented some advanced data structures and algorithms such as segment trees, graph algorithms and bitmasking
+        \item  Participated in practice contests put up by the project mentors as well as official rounds of various programming platforms
+	\end{itemize}
+\end{body}
+    
+% \newpage{} % uncomment this line if you want to force a new page
+%\smallskip
+%\end{body}
+%\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Position of Responsibilities
+\vspace{-8pt}
+\header{Programming Achievements}
+\begin{body}
+\vspace{17pt}
+\begin{itemize} \itemsep -1pt
+    \itemindent=-1.0em
+    \item Highly active participant on \textbf{Codechef} contests, with highest rating achieved of \textbf{2082} (5 star), user - \href{https://www.codechef.com/users/arrow_t}{arrow\_t}
+    \item Highly active participant on \textbf{Codeforces} contests, with the highest rating achieved of \textbf{1906}, user - \href{https://codeforces.com/profile/talibmohd}{talibmohd}
+    \item Secured a rank of 2178 in \textbf{Google Code Jam} 2020 Round 1-C among over 10,000 people participating in the round
+    \item Secured a rank of 590 in \textbf{Google Kick Start} 2020 Round 1-D among over 11,500 people participating in the round
+\end{itemize}
+\end{body}
+% Skills
+\vspace{-6pt}
+\header{Positions of Responsibility}
+
+\begin{body}
+	\vspace{16pt}
+	\textbf {Student Guide, Counselling Service}\hfill {\em July'19 - July'20}
+	\vspace{-4pt}
+	\begin{itemize} \itemsep -1pt
+		\item Responsible for ensuring a smooth transition of freshmen into college, guiding a group of \textbf{6 counselees}
+		\item Assisted the Core team members in smooth conduction of the \textbf{UG Orientation} for over 1,000 students of the 2019 batch
+	\end{itemize}
+	\vspace{-3pt}
+		\textbf {Senior Executive, Techkriti Open School Championship'19} \hfill {\em May'19 - Nov'19}\\
+\vspace{-5pt}
+	\begin{itemize} \itemsep -1pt
+		\item Managed the conduction of the examination at IIT Kanpur and co-ordinated with the team for \textbf{paper setting and results}
+		\item Worked with the heads and the team to raise \textbf{exceptional participation} in the event from Kanpur City schools
+  
+	\end{itemize}
+	
+%         \textbf {Junior Executive, Show Management, Techkriti'19} \\
+
+% 	\begin{itemize} \itemsep -0pt
+% 		\item Worked with a team of 20 people to manage the conduction of Techkriti, the techno-entrepreneurial fest of IIT Kanpur
+% 		\item Assisted the Heads and the team to make optimal use of the resources available
+  
+% 	\end{itemize}
+	
+	\end{body}
+
+
+\vspace{-8pt}
+% \vspace{-6pt}
+
+% \end{body}
+\begin{body}
+    \vspace{21pt}
+    \renewcommand{\arraystretch}{1.1}
+    \setlength{\tabcolsep}{13.4pt}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Languages} & \textbf{Frameworks/APIs} & \textbf{Tools \& Softwares} & \textbf{Cloud}\\
+        \hline
+        C, C{++}, Python, Verilog HDL & Firebase, Git/Github, Keras, NodeJS, VueJS & \LaTeX, MATLAB, Xilinx ISE & AWS\\
+        \hline
+        %  & 
+    \end{tabular}
+\end{body}
+% \smallskip
+\vspace{-0pt}
+\header{Relevant Courses}
+
+\begin{body}
+	\vspace{18pt}
+% 	\leftmargin=0.4in
+% \indent=1em
+Data Structures \& Algorithms $|$
+Fundamentals of Computing $|$
+Discrete Mathematics $|$
+Mathematical Logic - \textbf{A*} $|$
+Software Development \& Operations $|$
+Computational Methods in Engineering $|$
+Linear Algebra \& ODE $|$
+Introduction to Real Analysis \& Advanced Calculus - \textbf{A*} $|$
+Computer Organization $|$
+Introduction to Microeconomics $|$
+\href{https://www.coursera.org/account/accomplishments/certificate/WVYY4U3DKVBM}{Machine Learning}\textsuperscript{${\bf\Upsilon}$} $|$
+\href{https://www.coursera.org/account/accomplishments/specialization/certificate/SMFFBZ7XFK3H}{Deep Learning}\textsuperscript{${\bf\Upsilon}$}
+\href{https://www.coursera.org/account/accomplishments/specialization/certificate/BM37DELH9GNV}{TensorFlow in Practice}\textsuperscript{${\bf\Upsilon}$} $|$
+\href{https://www.coursera.org/account/accomplishments/specialization/certificate/UBNWKPPAQSLE}{AWS Fundamentals}\textsuperscript{${\bf\Upsilon}$}\\
+\vspace{-7pt}
+\hfill\{\textbf{A*}\}\textit{ - Outstanding Performance, \{\textsuperscript{${\bf\Upsilon}$}\} - Coursera}
+
+
+
+%\emph{*courses to be completed by Nov'15}\hfill %\pagebreak
+\end{body}
+\vspace{-10pt}
+
+% \newpage
+% EXTRA CURRICS
+\header{Extra Curriculars}
+\begin{body}
+\vspace{17pt}
+\begin{itemize} \itemsep -1pt
+    \itemindent=-1.0em
+    % \item Highly active participant on \textbf{Codechef} contests, with highest rating achieved of \textbf{2082} (5 star), user - \href{https://www.codechef.com/users/arrow_t}{arrow\_t}
+    % \item Highly active participant on \textbf{Codeforces} contests, with the highest rating achieved of \textbf{1739}, user - \href{https://codeforces.com/profile/talibmohd}{talibmohd}
+    % \item Secured a rank of 2178 in \textbf{Google Code Jam} 2020 Round 1-C among over 10,000 people participating in the round
+    % \item Secured a rank of 590 in \textbf{Google Kick Start} 2020 Round 1-D among over 11,500 people participating in the round
+    % \item Participated in \textbf{Google Code Jam} Round 1C and secured a rank of 2178
+    % \item Participated in \textbf{Google Kick Start} Round 1D and secured a rank of 590
+    \item Worked as \textbf{Junior Executive} in Show Management, Techkriti'19 and collaborated in a 3-tier team to manage the event
+    \item Awarded a \textbf{merit certificate} by CBSE for exceptional performance in \textbf{English} and being in top \textbf{0.1\%} of candidates in class 12
+    % \item Actively played hockey during my first year
+    % \item Awarded a merit certificate by \textbf{CBSE} for exceptional performance and being in top 0.1\% of successful candidates in class 12
+    % \item Won four trophies in various events at Comfest 2016 and 2017, an event where schools from all over the country participated
+    \item Secured \textbf{third position} in Dhara Rani Prize Exam 2018, conducted to test Math skills across schools in Kanpur city
+    \item Appointed as the \textbf{Disciplinary In-Charge} in Dr. Virendra Swarup Education Center Shyam Nagar in the session 2017-2018
+    % \item Represented my school in various quizzing events on different levels
+%     \item Dhara Rani
+%     \item GK Quiz
+%     \item Comfest
+\end{itemize}
+\end{body}
+
+
+\end{document}
+
